@@ -13,7 +13,7 @@ This is what it looks like visually.
 
 ```html
 <div>
-  <h1>🧁 Hello, CodeMash!</h1>
+  <h1>🧁 Hello, StirTrek!</h1>
 </div>
 ```
 
@@ -44,7 +44,7 @@ Static
 ```tsx
 // App.tsx
 <Heading>
-  🧁 Hello, CodeMash!
+  🧁 Hello, StirTrek!
 </Heading>
 ```
 <!-- 
@@ -61,11 +61,15 @@ Dynamic
 ```tsx
 // App.tsx
 <Heading background="secondary" color="primary" padding="m" >
-  🧁 Hello, CodeMash!
+  🧁 Hello, StirTrek!
 </Heading>
 ```
 
-<!-- We might build up our heading component to accept some number of props to dynamically change it's appearance based on the token values supplied by the parent component like this. -->
+<!--
+We might build up our heading component to accept some number of props to dynamically change it's appearance based on the tokenized values supplied by the parent component to our Heading component as props.
+
+Like you see here
+-->
 
 ---
 
@@ -91,6 +95,6 @@ Themed
 
 Finally, since the design system I work on supports theming. Not just a handful of themes, but dozens or hundreds of themes, we'll also look for a solution that uses CSS variables so we can swap out our theme at runtime to make sure we're not sending a bunch of extra CSS down to the browser.
 
-Note that the examples we look at today will be in React, but the same concepts apply regardless of whatever component-driven JS library you use.
+Now, the examples we look at today will be in React, but the same concepts apply regardless of whatever component-driven JS framework you use.
 -->
 

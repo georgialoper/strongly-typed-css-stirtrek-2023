@@ -1,6 +1,6 @@
 # 👋 Hello!
 
-Thanks for attending *Strongly-typed CSS with Vanilla-extract* during CodeMash 2023.
+Thanks for attending *Strongly-typed CSS with Vanilla-extract* during StirTrek 2023.
 
 This repo holds the [sli.dev](https://sli.dev/) app that powered the presentation slides, but they can be viewed in .pdf form [here](https://github.com/georgialoper/vanilla-extract-codemash-2023/blob/main/slides-export.pdf).
 

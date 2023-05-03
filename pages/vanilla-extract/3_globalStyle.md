@@ -31,7 +31,7 @@ html, body {
 
 ---
 
-```js {all|2|4|6-8|all}
+```js {all|2|4|6-8}
 // global.css.ts
 import { globalStyle, style } from '@vanilla-extract/css'
 
@@ -83,7 +83,7 @@ export const App = () => (
 ```
 
 <!--
-The I can go over to my app.tsx component
+Then I can go over to my app.tsx parent component
 
 click
 

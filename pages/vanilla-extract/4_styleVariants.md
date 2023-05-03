@@ -83,7 +83,7 @@ import { Heading } from './components/Heading'
 
 export const App = () => (
   <>
-    <Heading variant="primary">🧁 Hello, CodeMash!</Heading>
+    <Heading variant="primary">🧁 Hello, StirTrek!</Heading>
   </>
 );
 ```
@@ -102,7 +102,7 @@ import { Heading } from './components/Heading'
 
 export const App = () => (
   <>
-    <Heading variant="secondary">🧁 Hello, CodeMash!</Heading>
+    <Heading variant="secondary">🧁 Hello, StirTrek!</Heading>
   </>
 );
 ```
@@ -141,15 +141,15 @@ assign that type to my heading component props -->
 
 <img src="/assets/ve-ts-error-variant.png" />
 
-<!-- Then if I misspell any of the variants or try to supply a variant that doesn't exist, I'll get that TS feedback telling my I can only use primary or secondary.
+<!-- Then if I misspell any of the variants or try to supply a variant that doesn't exist, I'll get that TS feedback telling me I can only use primary or secondary.
 
-Likewise, if I were to end up adding a tertiary key to my styleVariants object, the type of this variant prop on my Heading component would stay up to date, without having to go make that update in the Heading
+Likewise, if I were to end up adding a tertiary key to my styleVariants object, the type of this variant prop on my Heading component would stay up to date, without having to go make that update in my Heading component
 
-It would just become automatically available on the parent component -->
+It would just become automatically available to the parent component -->
 
 ---
 
-```ts {8,13}
+```ts {all|8,13}
 // ./components/Heading.css.ts
 import { styleVariants } from '@vanilla-extract/css'
 
@@ -168,9 +168,13 @@ export const variants = styleVariants({
 ```
 
 <!--
+Now let's go back to the .css.ts file
+
+click
+
 I'm not a huge fan that we applied the same padding to each variant
 
-We can abstract that to its own class and compose it together in our variants.
+We can abstract that to its own class and compose it together in both our primary and secondary variants.
 -->
 
 ---
@@ -205,7 +209,7 @@ export const variants = styleVariants({
 
 click
 
-use it to define a space class with our padding
+use it to define a space class with our padding value
 
 click
 
@@ -218,7 +222,7 @@ We can do that for our secondary key as well
 
 click
 
-now we see that the only properties in our variants are those that actually contain differing styles
+now we see that the only properties defined in our variants are those that actually contain differing styles
  -->
 
 ---

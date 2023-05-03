@@ -1,9 +1,9 @@
 
 <img src="/assets/ve-createglobaltheme.png" />
 
-<!-- That's all great, but I'm still hard coding my color values and my space values. I don't like that, let's ameliorate that.
+<!-- That's all great, but I'm still hard coding my color and spacing values. I don't like that, let's ameliorate that.
 
-Vanilla extract has several API and some additional libraries that help deal with tokens and theming.
+Vanilla extract has several APIs and some additional libraries that help deal with tokens and theming.
 
 We're not going to cover all of these today, but let's first look at the createGlobalTheme function. -->
 
@@ -180,7 +180,9 @@ export const vars = createGlobalTheme(":root", {
 <img src="/assets/ve-createtheme.png" />
 
 <!--
-They also have create theme, which uses the vars structure you supply to define a theme contract all the other themes have to adhere to, enforced by TS
+They also have create theme, which uses the vars structure you supply to define a theme contract all the other themes have to adhere to.
+
+That contract will be enforced by TS.
 
 It also returns a generated root class for each theme, so you can swap between themes by swapping that class 
 -->

@@ -43,6 +43,8 @@ click
 
 to that style function we'll supply an object representing the styles we want to apply.
 
+click
+
 This will create the same styles we've been looking at, but obviously authored in TS
 -->
 
@@ -59,6 +61,13 @@ If we hover we'll see information about that property since VE is built on top o
 
 <img src="/assets/ve-ts-error.png"/>
 
+<!--
+
+And of course we'll get the red squiggly if we try to supply invalid values, try to style properties that don't exist, or simply make spelling errors.
+
+This is great for me since I might actually be the world's worst speller
+-->
+
 ---
 
 ```tsx
@@ -72,7 +81,7 @@ export const Heading = ({ children }) => (
 )
 ```
 
-<!-- Let's go over to our heading component. -->
+<!-- Let's go over to our basic heading component. -->
 
 ---
 
@@ -90,12 +99,12 @@ export const Heading = ({ children }) => (
 
 <!--
 
-import styles as a module from .Heading.css. Not heading .css.ts 
+import styles as a module from Heading.css. Not heading .css.ts 
 There is no CSS file on disk.
 
 We'll take the root key off the styles module and supply that to the className of our element.
 
-Notice this looks exactly like CSS modules. The creators are the same.
+Notice this looks exactly like CSS modules so far. The creators are the same.
 -->
 
 ---

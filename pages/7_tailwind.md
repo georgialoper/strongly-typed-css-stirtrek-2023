@@ -201,6 +201,6 @@ cons
 - Mental overhead
 - DevX
   - lots to maintain to be able to use of props & state for styling
-  - IDE plugins and linters can make it feel type safety, but there’s no way to actually use those types in code
+  - IDE plugins and linters can create the illusion of type safety, but there’s no way to actually use those types in the code
 	- Can become unreadable when lots of classes are applied (I don't think this is actually a problem in the browser, just some strong opinions)
 -->

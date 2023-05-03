@@ -1,7 +1,7 @@
 
 ## Runtime CSS-in-JS
 
-<!-- What even is Runtime CSS-in-JS? -->
+<!-- What do I mean by Runtime CSS-in-JS? -->
 
 ---
 
@@ -45,7 +45,7 @@ For this example I'm using the emotion react library, which would require some s
 
 click
 
-The library might expose this css props on all our elements, or we might otherwise import it as a function from the library, the result of which we'd just pass on to the elements class prop. 
+The library might expose this css prop on all our elements, or we might otherwise import it as a function from the library, the result of which we'd just pass on to the elements class prop. 
 
 Regardless, we'll supply our styles to the css prop or function as an object that's representative of the styles we want to apply to our div element.
 
@@ -95,7 +95,7 @@ Since we don't have to do any mapping or anything fancy, or even be aware of any
 <!--
 Ultimately, this is what the generated css might look like in the browser.
 
-Effectively, the css prop or function from these libraries generates the requested CSS, returns the classname, and applies it to the element.
+Effectively, the css prop or function from these libraries generates the requested CSS, returns the classname, which is then supplied to the class attribute on the element.
 
 click
 
@@ -125,7 +125,7 @@ What are the pros of Runtime CSS in JS?
     - Use props & states without inlining styles
       - inlining is not ideal for performance when the same styles are applied to many elements
  - Co-location
-   - Helps prevent dead code since the CSS is likely to be deleted with when the elements that use it are deleted
+   - Helps prevent dead code since CSS classes are very likely to be deleted with when the elements that use those classes are deleted
  - Locally scoped
    - Styles meant for a specific element won't have unintended affects on other elements
  - *Can* be made typesafe
@@ -159,5 +159,5 @@ And, of course, your chosen CSS in JS library needs to be sent to the browser to
 
 <img src="/assets/why-were-breaking-up-with-css-in-js.png"/>
 
-<!-- If you're interested in more details on this, highly recommended checking out this article that was circling around twitter a couple months ago. Note, that it does errantly lump vanilla-extract in with these runtime css in js libraries. -->
+<!-- If you're interested in more details on this, highly recommended checking out this article that was circling around a couple months ago. Note, that it does errantly lump vanilla-extract in with these runtime css in js libraries incorrectly. -->
 

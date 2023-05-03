@@ -23,7 +23,7 @@ layout: two-cols
 
 <img src="/assets/ve-sprinkles.png" />
 
-<!-- Vanilla-extract has a seperate library called sprinkles -->
+<!-- Vanilla-extract has a separate library called sprinkles -->
 
 ---
 
@@ -68,12 +68,14 @@ use the vars in this properties object where we'll assign our vars to every CSS 
 
 then we'll create a sprinklesFn assigned to the createSprinkles function which accepts our properties
 
-Which is a little convoluted all we really need to focus on in here is defining our properties
+This all looks pretty scarry and convoluted, but it's really just a lot of boilerplate.
+
+The focus here is really on defining the properties and media queries for which we'd like to generate atomic CSS classes.
  -->
 
 ---
 
-```css {all|1-6|7-12|13-21|all}
+```css {all|1-6|7-12|13-21|all|1}
 .sprinkles_color_primary_mobile__asdfg0 {
   color: var(--color-primary__asdfg0)
 }
@@ -98,7 +100,8 @@ Which is a little convoluted all we really need to focus on in here is defining 
 ```
 
 <!-- 
-This is the CSS output, again it's a css.ts file so this will be static CSS created at build time.
+This is the CSS output, again since we defined our sprinkles in a .css.ts file this will be static CSS created at build time.
+
 You can see we have a class for every vars token for every property we defined in that properties key, so we effectively have Atomic CSS classes
 
 We have our color atomic classes
@@ -117,26 +120,26 @@ notice that these class names follow the pattern of filename, property name, tok
 ```css
 @media screen and (min-width: 768px) {
   .sprinkles_color_primary_tablet__asdfg0 {
-  color: var(--color-primary__asdfg0)
-}
-.sprinkles_color_secondary_tablet__asdfg0 {
-  color: var(--color-secondary__asdfg1)
-}
-.sprinkles_background_primary_tablet__asdfg0 {
-  background: var(--color-primary__asdfg2)
-}
-.sprinkles_background_secondary_tablet__asdfg0 {
-  background: var(--color-secondary__asdfg3)
-}
-.sprinkles_space_s_tablet__asdfg0 {
-  padding: var(--space-s__asdfg4)
-}
-.sprinkles_space_m_tablet__asdfg0 {
-  padding: var(--space-m__asdfg4)
-}
-.sprinkles_space_m_tablet__asdfg0 {
-  padding: var(--space-m__asdfg4)
-}
+    color: var(--color-primary__asdfg0)
+  }
+  .sprinkles_color_secondary_tablet__asdfg0 {
+    color: var(--color-secondary__asdfg1)
+  }
+  .sprinkles_background_primary_tablet__asdfg0 {
+    background: var(--color-primary__asdfg2)
+  }
+  .sprinkles_background_secondary_tablet__asdfg0 {
+    background: var(--color-secondary__asdfg3)
+  }
+  .sprinkles_space_s_tablet__asdfg0 {
+    padding: var(--space-s__asdfg4)
+  }
+  .sprinkles_space_m_tablet__asdfg0 {
+    padding: var(--space-m__asdfg4)
+  }
+  .sprinkles_space_m_tablet__asdfg0 {
+    padding: var(--space-m__asdfg4)
+  }
 }
 ```
 
@@ -146,27 +149,27 @@ notice that these class names follow the pattern of filename, property name, tok
 
 ```css {all|15,18,21}
 @media screen and (min-width: 1024px) {
-.sprinkles_color_primary_desktop__asdfg0 {
-  color: var(--color-primary__asdfg0)
-}
-.sprinkles_color_secondary_desktop__asdfg0 {
-  color: var(--color-secondary__asdfg1)
-}
-.sprinkles_background_primary_desktop__asdfg0 {
-  background: var(--color-primary__asdfg2)
-}
-.sprinkles_background_secondary_desktop__asdfg0 {
-  background: var(--color-secondary__asdfg3)
-}
-.sprinkles_space_s_desktop__asdfg0 {
-  padding: var(--space-s__asdfg4)
-}
-.sprinkles_space_m_desktop__asdfg0 {
-  padding: var(--space-m__asdfg4)
-}
-.sprinkles_space_m_desktop__asdfg0 {
-  padding: var(--space-m__asdfg4)
-}
+  .sprinkles_color_primary_desktop__asdfg0 {
+    color: var(--color-primary__asdfg0)
+  }
+  .sprinkles_color_secondary_desktop__asdfg0 {
+    color: var(--color-secondary__asdfg1)
+  }
+  .sprinkles_background_primary_desktop__asdfg0 {
+    background: var(--color-primary__asdfg2)
+  }
+  .sprinkles_background_secondary_desktop__asdfg0 {
+    background: var(--color-secondary__asdfg3)
+  }
+  .sprinkles_space_s_desktop__asdfg0 {
+    padding: var(--space-s__asdfg4)
+  }
+  .sprinkles_space_m_desktop__asdfg0 {
+    padding: var(--space-m__asdfg4)
+  }
+  .sprinkles_space_m_desktop__asdfg0 {
+    padding: var(--space-m__asdfg4)
+  }
 }
 ```
 
@@ -176,7 +179,7 @@ And a set of classes scoped to the desktop breakpoint
 
 click
 
-One thing that's not very atomic in that these spacing atomic classes are just targetting the padding property, so all sides of the element will receive padding,
+One thing that's not very atomic i that these spacing atomic classes are just targeting the padding property, so all sides of the element will receive padding,
 
 I think we want finer grained control over that
 -->
@@ -253,7 +256,7 @@ export const root = style([
 <!--
 we can import our sprinklesfn
 
-instead of passing some representative CSS object to our style functionwe'll supply an array to the style function. 
+instead of passing some representative CSS object to our style function we'll supply an array to the style function. 
 
 Inside that array we'll supply an object to our sprinkles function that contains each property we want to style, but instead of specifying a hardcoded value or our vars to that property, we can pass a key from the object in our vars that we specified for that property in our properties key.
 
@@ -377,7 +380,7 @@ tablet
 
 desktop
 
-Imporant: all the atomic classes for each condition will exist regardless of if we use them in a component's .css.ts file or not.
+Important: all the atomic classes for each condition will exist regardless of if we use them in a component's .css.ts file or not.
 -->
 
 ---
@@ -448,8 +451,8 @@ import { sprinklesFn, Sprinkles } from '../../styles/sprinkles.css'
 
 type HeadingProps = {
   background?: Sprinkles["background"];
-  color?: Sprinkes["color"]
-  padding?: Sprinkes["padding"]
+  color?: Sprinkles["color"]
+  padding?: Sprinkles["padding"]
 }
 
 export const Heading = ({ background, color, padding, children }: HeadingProps) => (

@@ -5,7 +5,8 @@
 
 So what approaches are we going to be evaluating today?
 
-The State of CSS 2022 was released maybe a few weeks or months ago now and they largely break down today's approaches to styling to 2 broad categories.
+Let's look at the The State of CSS 2022, which  was released maybe about 4 months ago now.
+This report categorized today's approaches to styling to 2 broad buckets.
 
  - CSS Frameworks
  - CSS-in-JS
