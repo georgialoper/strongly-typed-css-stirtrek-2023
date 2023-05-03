@@ -32,8 +32,6 @@ layout: two-cols
 
 ---
 
-#### slides 👇
-
 <img src="/assets/qr-code.svg" />
 
 <!--

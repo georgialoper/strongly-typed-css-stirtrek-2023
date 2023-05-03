@@ -11,8 +11,8 @@ It's not to most simple system by any means, so it's probably overkill for perso
 
 # 🧁 
 
-#### slides 👇
+<!-- Thank you -->
+
+---
 
 <img src="/assets/qr-code.svg" />
-
-<!-- Thank you -->
