@@ -1,4 +1,6 @@
-<img src="/assets/ve-style.png"/>
+<img src="/assets/ve-style.png" style="maxHeight: 75%;" />
+
+[#style](https://vanilla-extract.style/documentation/api/style/)
 
 <!--
 Vanilla-extract is a library that exports a number of functions that offer different functionality. The most basic of which is the style function.

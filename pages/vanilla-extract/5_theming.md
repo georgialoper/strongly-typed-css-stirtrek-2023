@@ -1,5 +1,7 @@
 
-<img src="/assets/ve-createglobaltheme.png" />
+<img src="/assets/ve-createglobaltheme.png" style="maxHeight: 75%;" />
+
+[#createGlobalTheme](https://vanilla-extract.style/documentation/global-api/create-global-theme/)
 
 <!-- That's all great, but I'm still hard coding my color and spacing values. I don't like that, let's ameliorate that.
 
@@ -177,7 +179,9 @@ export const vars = createGlobalTheme(":root", {
 
 ---
 
-<img src="/assets/ve-createtheme.png" />
+<img src="/assets/ve-createtheme.png" style="maxHeight: 75%;" />
+
+[#createTheme](https://vanilla-extract.style/documentation/api/create-theme/)
 
 <!--
 They also have create theme, which uses the vars structure you supply to define a theme contract all the other themes have to adhere to.
@@ -189,7 +193,9 @@ It also returns a generated root class for each theme, so you can swap between t
 
 ---
 
-<img src="/assets/ve-dynamic.png" />
+<img src="/assets/ve-dynamic.png" style="maxHeight: 75%;" />
+
+[#dynamic](https://vanilla-extract.style/documentation/packages/dynamic/#assigninlinevars)
 
 <!--
 There's also this dynamic library that allows you to swap values assigned to the "vars" CSS variables at runtime

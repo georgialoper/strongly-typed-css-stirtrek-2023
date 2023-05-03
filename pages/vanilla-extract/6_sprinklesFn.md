@@ -21,7 +21,9 @@ layout: two-cols
 
 ---
 
-<img src="/assets/ve-sprinkles.png" />
+<img src="/assets/ve-sprinkles.png" style="maxHeight: 75%;" />
+
+[#sprinkles](https://vanilla-extract.style/documentation/packages/sprinkles/)
 
 <!-- Vanilla-extract has a separate library called sprinkles -->
 

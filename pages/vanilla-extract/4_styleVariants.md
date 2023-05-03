@@ -1,5 +1,7 @@
 
-<img src="/assets/ve-stylevariants.png"/>
+<img src="/assets/ve-stylevariants.png" style="maxHeight: 75%;" />
+
+[#styleVariants](https://vanilla-extract.style/documentation/api/style-variants/)
 
 <!-- So, with just those 2 functions, you can do most things you could with css-modules or any other tooling. So now we'll see where vanilla-extract starts to really shine.
 

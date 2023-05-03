@@ -1,5 +1,6 @@
+<img src="/assets/vanilla-extract.png" style="maxHeight: 75%;" />
 
-<img src="/assets/vanilla-extract.png" />
+[vanilla-extract.style](https://vanilla-extract.style/)
 
 <!--
 - With that, let's look at vanilla-extract

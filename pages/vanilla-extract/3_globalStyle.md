@@ -1,4 +1,6 @@
-<img src="/assets/ve-globalstyle.png" />
+<img src="/assets/ve-globalstyle.png" style="maxHeight: 75%;" />
+
+[#globalStyle](https://vanilla-extract.style/documentation/global-api/global-style/)
 
 <!-- 
 Fortunately, vanilla-extract doesn't completely leave you hanging. If you really need to do something, you can use this globalStyle function.
