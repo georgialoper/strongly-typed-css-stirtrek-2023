@@ -1,5 +1,5 @@
 ---
-theme: eloc
+theme: ./theme
 title: Strongly-typed CSS with Vanilla-extract
 ---
 
@@ -58,4 +58,3 @@ src: ./pages/11_future.md
 ---
 src: ./pages/12_summary.md
 ---
-
